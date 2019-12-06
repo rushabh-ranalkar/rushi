@@ -3,7 +3,7 @@
   
 struct Node { 
     int data; 
-    struct Node* next
+    struct Node* next;
 }; 
   
 
@@ -35,7 +35,7 @@ void push(struct Node** head_ref, int new_data)
 } 
   
 
-void printList(struct Node* head
+void printList(struct Node* head)
 { 
     struct Node* temp = head; 
     while (temp != NULL) { 
@@ -50,7 +50,7 @@ int main()
     
     struct Node* head = NULL; 
   
-    push(&head, 20; 
+    push(&head, 20); 
     push(&head, 4); 
     push(&head, 15); 
     push(&head, 85); 
@@ -59,5 +59,5 @@ int main()
     reverse(&head); 
     printf("\nReversed Linked list \n"); 
     printList(head); 
-    getchar() 
+    getchar(); 
 } 
